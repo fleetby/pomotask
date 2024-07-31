@@ -1,6 +1,21 @@
 # Pomodoro
 A simple Pomodoro app implementation in Flutter/Dart. This app helps you manage your time effectively by breaking it into work and rest intervals.
 
+
+## Usage
+
+1. Set your work and break intervals.
+2. Start the timer and track your progress.
+3. Take breaks and return to work.
+
+## Screenshots
+
+<div>
+    <img width="250" src=".readme-assets/flutter_01.png">
+    <img width="250" src=".readme-assets/flutter_02.png">
+    <img width="250" src=".readme-assets/flutter_03.png">
+</div>
+
 ## Installation
 1. Clone the repository:
    ```bash
@@ -18,22 +33,6 @@ A simple Pomodoro app implementation in Flutter/Dart. This app helps you manage 
    ```bash
    flutter run
    ```
-
-## Usage
-
-1. Set your work and break intervals.
-2. Start the timer and track your progress.
-3. Take breaks and return to work.
-
-## Screenshots
-
-<div>
-    <img width="250" src=".readme-assets/flutter_01.png">
-    <img width="250" src=".readme-assets/flutter_02.png">
-    <img width="250" src=".readme-assets/flutter_03.png">
-</div>
-
-
 
 ## Future Plans
 

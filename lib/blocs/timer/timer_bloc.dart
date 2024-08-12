@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:pomodoro/extensions/countdown_timer_extension.dart';
 import 'package:quiver/async.dart';
 import 'package:quiver/time.dart';
 
@@ -27,13 +27,15 @@ class TimerBloc extends Bloc<TimerEvent, TimerState> {
       event.duration,
       aMillisecond,
     );
-    await _countdownTimer!.listen(
+    _countdownTimer!.listen(
       (countdownTimer) {
         emit(TimerState.ongoing(remainingTime: countdownTimer.remaining));
       },
-    ).asFuture();
+    );
 
-    emit(const TimerState.finished());
+    if (await _countdownTimer?.waitUntilFinished() ?? false) {
+      emit(const TimerState.finished());
+    }
   }
 
   Future<void> _skip(TimerSkip event, Emitter<TimerState> emit) async {

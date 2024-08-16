@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:pomodoro/get.dart';
 
-import 'app.dart';
+import 'package:pomodoro/presentation/app.dart';
 
-void main() {
-  runApp(const App());
+Future<void> main() async {
+  await registerDependencies();
+  runApp(App(get()));
 }

@@ -1,0 +1,4 @@
+enum TaskItemAction {
+  pin,
+  unpin,
+}

@@ -1,5 +1,6 @@
 name: pomodoro
-description: "A simple Pomodoro app implementation in Flutter/Dart. This app helps you manage your time effectively by breaking it into work and rest intervals."
+description: "A simple Pomodoro app implementation in Flutter/Dart. This app helps you
+  manage your time effectively by breaking it into work and rest intervals."
 publish_to: "none"
 version: 0.1.0
 
@@ -7,15 +8,29 @@ environment:
   sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
+  flutter_localizations:
+    sdk: flutter
   audioplayers: ^6.0.0
+  auto_route: ^9.2.0
   bloc: ^8.1.4
+  confetti: ^0.7.0
+  dotted_border: ^2.1.0
+  drift: ^2.19.1+1
+  drift_flutter: ^0.1.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
   freezed_annotation: ^2.4.4
+  get_it: ^7.7.0
+  injectable: ^2.4.4
   intl: any
+  material_symbols_icons: ^4.2780.0
   quiver: ^3.2.1
   shared_preferences: ^2.3.0
+  skeletonizer: ^1.4.2
+  form_field_validator: ^1.1.0
+  flutter_svg: ^2.0.10+1
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:
@@ -23,8 +38,13 @@ dev_dependencies:
   flutter_lints: ^3.0.0
   freezed: ^2.5.2
   build_runner: any
+  auto_route_generator: ^9.0.0
+  drift_dev: ^2.19.1
+  injectable_generator: ^2.6.2
+  very_good_analysis: ^6.0.0
 
 flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/icons/

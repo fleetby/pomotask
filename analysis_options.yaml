@@ -1,1 +1,6 @@
-include: package:flutter_lints/flutter.yaml
+include: package:very_good_analysis/analysis_options.yaml
+linter:
+  rules:
+    public_member_api_docs: false # Temporarily disabled
+    sort_pub_dependencies: false # Cannot be fixed automatically
+    flutter_style_todos: false

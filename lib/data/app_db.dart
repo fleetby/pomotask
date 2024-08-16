@@ -9,7 +9,16 @@ part 'app_db.g.dart';
 @singleton
 @DriftDatabase(tables: [TasksTable])
 class AppDb extends _$AppDb {
-  AppDb() : super(driftDatabase(name: 'pomodoro'));
+  AppDb()
+      : super(
+          driftDatabase(
+            name: 'pomodoro',
+            web: DriftWebOptions(
+              sqlite3Wasm: Uri.parse('sqlite3.wasm'),
+              driftWorker: Uri.parse('drift_worker.js'),
+            ),
+          ),
+        );
 
   @override
   int get schemaVersion => 1;

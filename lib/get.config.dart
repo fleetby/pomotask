@@ -52,41 +52,25 @@ import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {
 // initializes the registration of main-scope dependencies inside of GetIt
-  Future<_i174.GetIt> init({
+  _i174.GetIt init({
     String? environment,
     _i526.EnvironmentFilter? environmentFilter,
-  }) async {
+  }) {
     final gh = _i526.GetItHelper(
       this,
       environment,
       environmentFilter,
     );
     final sharedPreferencesModule = _$SharedPreferencesModule();
-    await gh.factoryAsync<_i460.SharedPreferences>(
-      () => sharedPreferencesModule.sharedPreferences,
-      preResolve: true,
-    );
     gh.factory<_i1037.TimerBloc>(() => _i1037.TimerBloc());
     gh.singleton<_i869.AppDb>(() => _i869.AppDb());
+    gh.singleton<_i460.SharedPreferencesAsync>(
+        () => sharedPreferencesModule.sharedPreferences);
     gh.singleton<_i207.AppRouter>(() => _i207.AppRouter());
-    gh.singleton<_i529.SettingsRepository>(
-        () => _i284.SettingsRepositoryImpl(gh<_i460.SharedPreferences>()));
-    gh.singleton<_i368.GetEstPomodoroDurationUseCase>(() =>
-        _i368.GetEstPomodoroDurationUseCase(gh<_i529.SettingsRepository>()));
-    gh.singleton<_i405.GetNextPomodoroTimerTypeUseCase>(() =>
-        _i405.GetNextPomodoroTimerTypeUseCase(gh<_i529.SettingsRepository>()));
-    gh.singleton<_i667.GetSoundEffectsEnabledUseCase>(() =>
-        _i667.GetSoundEffectsEnabledUseCase(gh<_i529.SettingsRepository>()));
-    gh.singleton<_i188.SetSoundEffectsEnabledUseCase>(() =>
-        _i188.SetSoundEffectsEnabledUseCase(gh<_i529.SettingsRepository>()));
     gh.singleton<_i204.TasksRepository>(
         () => _i664.TasksRepositoryImpl(gh<_i869.AppDb>()));
-    gh.singleton<_i151.TaskModelMapper>(
-        () => _i151.TaskModelMapper(gh<_i368.GetEstPomodoroDurationUseCase>()));
-    gh.factory<_i513.SettingsBloc>(() => _i513.SettingsBloc(
-          gh<_i667.GetSoundEffectsEnabledUseCase>(),
-          gh<_i188.SetSoundEffectsEnabledUseCase>(),
-        ));
+    gh.singleton<_i529.SettingsRepository>(
+        () => _i284.SettingsRepositoryImpl(gh<_i460.SharedPreferencesAsync>()));
     gh.singleton<_i478.CreateTaskUseCase>(
         () => _i478.CreateTaskUseCase(gh<_i204.TasksRepository>()));
     gh.singleton<_i692.DeleteCompletedTasksUseCase>(
@@ -106,6 +90,26 @@ extension GetItInjectableX on _i174.GetIt {
           gh<_i761.GetTaskStreamUseCase>(),
           gh<_i543.UpdateTaskUseCase>(),
         ));
+    gh.singleton<_i368.GetEstPomodoroDurationUseCase>(() =>
+        _i368.GetEstPomodoroDurationUseCase(gh<_i529.SettingsRepository>()));
+    gh.singleton<_i405.GetNextPomodoroTimerTypeUseCase>(() =>
+        _i405.GetNextPomodoroTimerTypeUseCase(gh<_i529.SettingsRepository>()));
+    gh.singleton<_i667.GetSoundEffectsEnabledUseCase>(() =>
+        _i667.GetSoundEffectsEnabledUseCase(gh<_i529.SettingsRepository>()));
+    gh.singleton<_i188.SetSoundEffectsEnabledUseCase>(() =>
+        _i188.SetSoundEffectsEnabledUseCase(gh<_i529.SettingsRepository>()));
+    gh.singleton<_i151.TaskModelMapper>(
+        () => _i151.TaskModelMapper(gh<_i368.GetEstPomodoroDurationUseCase>()));
+    gh.factory<_i513.SettingsBloc>(() => _i513.SettingsBloc(
+          gh<_i667.GetSoundEffectsEnabledUseCase>(),
+          gh<_i188.SetSoundEffectsEnabledUseCase>(),
+        ));
+    gh.factory<_i629.CreateTaskBloc>(() => _i629.CreateTaskBloc(
+          gh<_i478.CreateTaskUseCase>(),
+          gh<_i368.GetEstPomodoroDurationUseCase>(),
+          gh<_i247.GetTaskUseCase>(),
+          gh<_i543.UpdateTaskUseCase>(),
+        ));
     gh.factory<_i335.PomodoroBloc>(() => _i335.PomodoroBloc(
           gh<_i761.GetTaskStreamUseCase>(),
           gh<_i543.UpdateTaskUseCase>(),
@@ -117,12 +121,6 @@ extension GetItInjectableX on _i174.GetIt {
           gh<_i873.DeleteTaskUseCase>(),
           gh<_i692.DeleteCompletedTasksUseCase>(),
           gh<_i151.TaskModelMapper>(),
-        ));
-    gh.factory<_i629.CreateTaskBloc>(() => _i629.CreateTaskBloc(
-          gh<_i478.CreateTaskUseCase>(),
-          gh<_i368.GetEstPomodoroDurationUseCase>(),
-          gh<_i247.GetTaskUseCase>(),
-          gh<_i543.UpdateTaskUseCase>(),
         ));
     return this;
   }

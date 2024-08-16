@@ -4,9 +4,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 @module
 abstract class SharedPreferencesModule {
-  @preResolve
-  Future<SharedPreferences> get sharedPreferences {
+  @singleton
+  SharedPreferencesAsync get sharedPreferences {
     WidgetsFlutterBinding.ensureInitialized();
-    return SharedPreferences.getInstance();
+    return SharedPreferencesAsync();
   }
 }

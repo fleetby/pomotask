@@ -10,13 +10,12 @@ class SettingsRepositoryImpl implements SettingsRepository {
   static const _soundEffectsEnabledKey = 'soundEffectsEnabled';
   static const _soundEffectsEnabledDefaultValue = true;
 
-  final SharedPreferences _sharedPreferences;
+  final SharedPreferencesAsync _sharedPreferences;
 
   @override
-  Future<bool> getSoundEffectsEnabled() => Future.value(
-        _sharedPreferences.getBool(_soundEffectsEnabledKey) ??
-            _soundEffectsEnabledDefaultValue,
-      );
+  Future<bool> getSoundEffectsEnabled() async =>
+      (await _sharedPreferences.getBool(_soundEffectsEnabledKey)) ??
+      _soundEffectsEnabledDefaultValue;
 
   @override
   Future<void> setSoundEffectsEnabled({required bool enabled}) =>

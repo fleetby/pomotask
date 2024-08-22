@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/symbols.dart';
-import 'package:pomodoro/presentation/constants/task_item_action.dart';
-import 'package:pomodoro/presentation/styles/task_priority_colors.dart';
-import 'package:pomodoro/presentation/utils/duration_utils.dart';
-import 'package:pomodoro/presentation/view_models/task_view_model.dart';
+import 'package:pomotask/presentation/constants/task_item_action.dart';
+import 'package:pomotask/presentation/styles/task_priority_colors.dart';
+import 'package:pomotask/presentation/utils/duration_utils.dart';
+import 'package:pomotask/presentation/view_models/task_view_model.dart';
 
 class TaskItem extends StatelessWidget {
   const TaskItem(

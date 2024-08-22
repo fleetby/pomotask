@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pomodoro/domain/constants/pomodoro_timer_type.dart';
-import 'package:pomodoro/presentation/blocs/pomodoro/pomodoro_bloc.dart';
-import 'package:pomodoro/presentation/localizations/app_localizations.dart';
-import 'package:pomodoro/presentation/utils/duration_utils.dart';
-import 'package:pomodoro/presentation/widgets/dashed_circular_progress_bar.dart';
+import 'package:pomotask/domain/constants/pomodoro_timer_type.dart';
+import 'package:pomotask/presentation/blocs/pomodoro/pomodoro_bloc.dart';
+import 'package:pomotask/presentation/localizations/app_localizations.dart';
+import 'package:pomotask/presentation/utils/duration_utils.dart';
+import 'package:pomotask/presentation/widgets/dashed_circular_progress_bar.dart';
 
 class CircularTimer extends StatelessWidget {
   const CircularTimer({

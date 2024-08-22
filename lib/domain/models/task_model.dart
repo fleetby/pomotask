@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pomodoro/domain/constants/task_priority.dart';
+import 'package:pomotask/domain/constants/task_priority.dart';
 
 part 'task_model.freezed.dart';
 

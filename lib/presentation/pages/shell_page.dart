@@ -1,8 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/symbols.dart';
-import 'package:pomodoro/presentation/app_router.gr.dart';
-import 'package:pomodoro/presentation/localizations/app_localizations.dart';
+import 'package:pomotask/presentation/app_router.gr.dart';
+import 'package:pomotask/presentation/localizations/app_localizations.dart';
 
 @RoutePage()
 class ShellPage extends StatelessWidget {

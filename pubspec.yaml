@@ -1,6 +1,5 @@
-name: pomodoro
-description: "A simple Pomodoro app implementation in Flutter/Dart. This app helps you
-  manage your time effectively by breaking it into work and rest intervals."
+name: pomotask
+description: "PomoTask is a pomodoro timer combined with task management features. Enhance your productivity, organize tasks seamlessly, and achieve your goals with ease!"
 publish_to: "none"
 version: 0.1.0
 

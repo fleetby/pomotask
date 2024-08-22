@@ -1,13 +1,13 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/constants/task_priority.dart';
-import 'package:pomodoro/domain/models/task_model.dart';
-import 'package:pomodoro/domain/use_cases/create_task_use_case.dart';
-import 'package:pomodoro/domain/use_cases/get_est_pomodoro_duration_use_case.dart';
-import 'package:pomodoro/domain/use_cases/get_task_use_case.dart';
-import 'package:pomodoro/domain/use_cases/update_task_use_case.dart';
-import 'package:pomodoro/presentation/constants/operation_status.dart';
+import 'package:pomotask/domain/constants/task_priority.dart';
+import 'package:pomotask/domain/models/task_model.dart';
+import 'package:pomotask/domain/use_cases/create_task_use_case.dart';
+import 'package:pomotask/domain/use_cases/get_est_pomodoro_duration_use_case.dart';
+import 'package:pomotask/domain/use_cases/get_task_use_case.dart';
+import 'package:pomotask/domain/use_cases/update_task_use_case.dart';
+import 'package:pomotask/presentation/constants/operation_status.dart';
 
 part 'create_task_event.dart';
 part 'create_task_state.dart';

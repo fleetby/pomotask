@@ -10,44 +10,44 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
-import 'package:pomodoro/data/app_db.dart' as _i869;
-import 'package:pomodoro/data/modules/shared_preferences_module.dart' as _i39;
-import 'package:pomodoro/data/repositories/settings_repository_impl.dart'
+import 'package:pomotask/data/app_db.dart' as _i869;
+import 'package:pomotask/data/modules/shared_preferences_module.dart' as _i39;
+import 'package:pomotask/data/repositories/settings_repository_impl.dart'
     as _i284;
-import 'package:pomodoro/data/repositories/tasks_repository_impl.dart' as _i664;
-import 'package:pomodoro/domain/repositories/settings_repository.dart' as _i529;
-import 'package:pomodoro/domain/repositories/tasks_repository.dart' as _i204;
-import 'package:pomodoro/domain/use_cases/create_task_use_case.dart' as _i478;
-import 'package:pomodoro/domain/use_cases/delete_completed_tasks_use_case.dart'
+import 'package:pomotask/data/repositories/tasks_repository_impl.dart' as _i664;
+import 'package:pomotask/domain/repositories/settings_repository.dart' as _i529;
+import 'package:pomotask/domain/repositories/tasks_repository.dart' as _i204;
+import 'package:pomotask/domain/use_cases/create_task_use_case.dart' as _i478;
+import 'package:pomotask/domain/use_cases/delete_completed_tasks_use_case.dart'
     as _i692;
-import 'package:pomodoro/domain/use_cases/delete_task_use_case.dart' as _i873;
-import 'package:pomodoro/domain/use_cases/get_est_pomodoro_duration_use_case.dart'
+import 'package:pomotask/domain/use_cases/delete_task_use_case.dart' as _i873;
+import 'package:pomotask/domain/use_cases/get_est_pomodoro_duration_use_case.dart'
     as _i368;
-import 'package:pomodoro/domain/use_cases/get_next_pomodoro_timer_type_use_case.dart'
+import 'package:pomotask/domain/use_cases/get_next_pomodoro_timer_type_use_case.dart'
     as _i405;
-import 'package:pomodoro/domain/use_cases/get_sound_effects_enabled_use_case.dart'
+import 'package:pomotask/domain/use_cases/get_sound_effects_enabled_use_case.dart'
     as _i667;
-import 'package:pomodoro/domain/use_cases/get_task_stream_use_case.dart'
+import 'package:pomotask/domain/use_cases/get_task_stream_use_case.dart'
     as _i761;
-import 'package:pomodoro/domain/use_cases/get_task_use_case.dart' as _i247;
-import 'package:pomodoro/domain/use_cases/get_tasks_stream_use_case.dart'
+import 'package:pomotask/domain/use_cases/get_task_use_case.dart' as _i247;
+import 'package:pomotask/domain/use_cases/get_tasks_stream_use_case.dart'
     as _i586;
-import 'package:pomodoro/domain/use_cases/set_sound_effects_enabled_use_case.dart'
+import 'package:pomotask/domain/use_cases/set_sound_effects_enabled_use_case.dart'
     as _i188;
-import 'package:pomodoro/domain/use_cases/update_task_use_case.dart' as _i543;
-import 'package:pomodoro/presentation/app_router.dart' as _i207;
-import 'package:pomodoro/presentation/blocs/create_task/create_task_bloc.dart'
+import 'package:pomotask/domain/use_cases/update_task_use_case.dart' as _i543;
+import 'package:pomotask/presentation/app_router.dart' as _i207;
+import 'package:pomotask/presentation/blocs/create_task/create_task_bloc.dart'
     as _i629;
-import 'package:pomodoro/presentation/blocs/pomodoro/pomodoro_bloc.dart'
+import 'package:pomotask/presentation/blocs/pomodoro/pomodoro_bloc.dart'
     as _i335;
-import 'package:pomodoro/presentation/blocs/settings/settings_bloc.dart'
+import 'package:pomotask/presentation/blocs/settings/settings_bloc.dart'
     as _i513;
-import 'package:pomodoro/presentation/blocs/task_details/task_details_bloc.dart'
+import 'package:pomotask/presentation/blocs/task_details/task_details_bloc.dart'
     as _i413;
-import 'package:pomodoro/presentation/blocs/task_list/task_list_bloc.dart'
+import 'package:pomotask/presentation/blocs/task_list/task_list_bloc.dart'
     as _i460;
-import 'package:pomodoro/presentation/blocs/timer/timer_bloc.dart' as _i1037;
-import 'package:pomodoro/presentation/mappers/task_model_mapper.dart' as _i151;
+import 'package:pomotask/presentation/blocs/timer/timer_bloc.dart' as _i1037;
+import 'package:pomotask/presentation/mappers/task_model_mapper.dart' as _i151;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {

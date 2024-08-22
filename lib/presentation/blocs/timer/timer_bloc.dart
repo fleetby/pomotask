@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/presentation/extensions/countdown_timer_extension.dart';
+import 'package:pomotask/presentation/extensions/countdown_timer_extension.dart';
 import 'package:quiver/async.dart';
 import 'package:quiver/time.dart';
 

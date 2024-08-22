@@ -7,7 +7,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appName => 'Pomodoro';
+  String get appName => 'PomoTask';
 
   @override
   String get titleFieldHint => 'Title';

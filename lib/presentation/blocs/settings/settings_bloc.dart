@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/use_cases/get_sound_effects_enabled_use_case.dart';
-import 'package:pomodoro/domain/use_cases/set_sound_effects_enabled_use_case.dart';
+import 'package:pomotask/domain/use_cases/get_sound_effects_enabled_use_case.dart';
+import 'package:pomotask/domain/use_cases/set_sound_effects_enabled_use_case.dart';
 
 part 'settings_event.dart';
 part 'settings_state.dart';

@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:material_symbols_icons/symbols.dart';
-import 'package:pomodoro/domain/constants/task_priority.dart';
-import 'package:pomodoro/presentation/blocs/create_task/create_task_bloc.dart';
-import 'package:pomodoro/presentation/constants/operation_status.dart';
-import 'package:pomodoro/presentation/localizations/app_localizations.dart';
-import 'package:pomodoro/presentation/styles/task_priority_colors.dart';
-import 'package:pomodoro/presentation/utils/duration_utils.dart';
+import 'package:pomotask/domain/constants/task_priority.dart';
+import 'package:pomotask/presentation/blocs/create_task/create_task_bloc.dart';
+import 'package:pomotask/presentation/constants/operation_status.dart';
+import 'package:pomotask/presentation/localizations/app_localizations.dart';
+import 'package:pomotask/presentation/styles/task_priority_colors.dart';
+import 'package:pomotask/presentation/utils/duration_utils.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
 class CreateTaskBody extends StatefulWidget {

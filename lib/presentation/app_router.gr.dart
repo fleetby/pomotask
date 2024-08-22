@@ -10,12 +10,12 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i7;
 import 'package:flutter/material.dart' as _i8;
-import 'package:pomodoro/presentation/pages/create_task_page.dart' as _i1;
-import 'package:pomodoro/presentation/pages/home_page.dart' as _i2;
-import 'package:pomodoro/presentation/pages/settings_page.dart' as _i3;
-import 'package:pomodoro/presentation/pages/shell_page.dart' as _i4;
-import 'package:pomodoro/presentation/pages/task_details_page.dart' as _i5;
-import 'package:pomodoro/presentation/pages/tasks_page.dart' as _i6;
+import 'package:pomotask/presentation/pages/create_task_page.dart' as _i1;
+import 'package:pomotask/presentation/pages/home_page.dart' as _i2;
+import 'package:pomotask/presentation/pages/settings_page.dart' as _i3;
+import 'package:pomotask/presentation/pages/shell_page.dart' as _i4;
+import 'package:pomotask/presentation/pages/task_details_page.dart' as _i5;
+import 'package:pomotask/presentation/pages/tasks_page.dart' as _i6;
 
 /// generated route for
 /// [_i1.CreateTaskPage]

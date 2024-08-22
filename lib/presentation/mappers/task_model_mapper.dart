@@ -1,7 +1,7 @@
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/models/task_model.dart';
-import 'package:pomodoro/domain/use_cases/get_est_pomodoro_duration_use_case.dart';
-import 'package:pomodoro/presentation/view_models/task_view_model.dart';
+import 'package:pomotask/domain/models/task_model.dart';
+import 'package:pomotask/domain/use_cases/get_est_pomodoro_duration_use_case.dart';
+import 'package:pomotask/presentation/view_models/task_view_model.dart';
 
 @singleton
 class TaskModelMapper {

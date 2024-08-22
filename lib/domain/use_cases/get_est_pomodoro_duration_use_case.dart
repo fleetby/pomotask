@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/repositories/settings_repository.dart';
+import 'package:pomotask/domain/repositories/settings_repository.dart';
 
 @singleton
 class GetEstPomodoroDurationUseCase {

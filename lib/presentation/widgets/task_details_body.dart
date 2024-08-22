@@ -2,12 +2,12 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:material_symbols_icons/symbols.dart';
-import 'package:pomodoro/domain/models/task_model.dart';
-import 'package:pomodoro/presentation/app_router.gr.dart';
-import 'package:pomodoro/presentation/blocs/pomodoro/pomodoro_bloc.dart';
-import 'package:pomodoro/presentation/blocs/task_details/task_details_bloc.dart';
-import 'package:pomodoro/presentation/constants/constraints.dart';
-import 'package:pomodoro/presentation/localizations/app_localizations.dart';
+import 'package:pomotask/domain/models/task_model.dart';
+import 'package:pomotask/presentation/app_router.gr.dart';
+import 'package:pomotask/presentation/blocs/pomodoro/pomodoro_bloc.dart';
+import 'package:pomotask/presentation/blocs/task_details/task_details_bloc.dart';
+import 'package:pomotask/presentation/constants/constraints.dart';
+import 'package:pomotask/presentation/localizations/app_localizations.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
 class TaskDetailsBody extends StatelessWidget {

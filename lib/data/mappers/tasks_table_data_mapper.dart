@@ -1,5 +1,5 @@
-import 'package:pomodoro/data/app_db.dart';
-import 'package:pomodoro/domain/models/task_model.dart';
+import 'package:pomotask/data/app_db.dart';
+import 'package:pomotask/domain/models/task_model.dart';
 
 extension TasksTableDataMapper on TasksTableData {
   TaskModel toModel() => TaskModel(

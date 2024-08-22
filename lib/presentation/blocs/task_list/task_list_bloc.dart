@@ -3,12 +3,12 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/models/task_model.dart';
-import 'package:pomodoro/domain/use_cases/delete_completed_tasks_use_case.dart';
-import 'package:pomodoro/domain/use_cases/delete_task_use_case.dart';
-import 'package:pomodoro/domain/use_cases/get_tasks_stream_use_case.dart';
-import 'package:pomodoro/presentation/mappers/task_model_mapper.dart';
-import 'package:pomodoro/presentation/view_models/task_view_model.dart';
+import 'package:pomotask/domain/models/task_model.dart';
+import 'package:pomotask/domain/use_cases/delete_completed_tasks_use_case.dart';
+import 'package:pomotask/domain/use_cases/delete_task_use_case.dart';
+import 'package:pomotask/domain/use_cases/get_tasks_stream_use_case.dart';
+import 'package:pomotask/presentation/mappers/task_model_mapper.dart';
+import 'package:pomotask/presentation/view_models/task_view_model.dart';
 
 part 'task_list_event.dart';
 part 'task_list_state.dart';

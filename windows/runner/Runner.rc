@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "pomodoro" "\0"
+            VALUE "FileDescription", "PomoTask" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "pomodoro" "\0"
+            VALUE "InternalName", "PomoTask" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "pomodoro.exe" "\0"
-            VALUE "ProductName", "pomodoro" "\0"
+            VALUE "OriginalFilename", "PomoTask.exe" "\0"
+            VALUE "ProductName", "PomoTask" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

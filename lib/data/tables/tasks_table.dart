@@ -1,5 +1,5 @@
 import 'package:drift/drift.dart';
-import 'package:pomodoro/domain/constants/task_priority.dart';
+import 'package:pomotask/domain/constants/task_priority.dart';
 
 class TasksTable extends Table {
   IntColumn get id => integer().autoIncrement()();

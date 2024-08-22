@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/models/task_model.dart';
-import 'package:pomodoro/domain/repositories/tasks_repository.dart';
+import 'package:pomotask/domain/models/task_model.dart';
+import 'package:pomotask/domain/repositories/tasks_repository.dart';
 
 @singleton
 class GetTaskStreamUseCase {

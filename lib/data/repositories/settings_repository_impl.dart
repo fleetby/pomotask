@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/constants/pomodoro_timer_type.dart';
-import 'package:pomodoro/domain/repositories/settings_repository.dart';
+import 'package:pomotask/domain/constants/pomodoro_timer_type.dart';
+import 'package:pomotask/domain/repositories/settings_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 @Singleton(as: SettingsRepository)

@@ -2,7 +2,7 @@
     <img src=".readme-assets/icon.png" width="128" height="128">
 </p>
 
-# Pomodoro
+# PomoTask
 ![Flutter](https://img.shields.io/badge/Framework-Flutter-027DFD?logo=flutter)
 ![Dart](https://img.shields.io/badge/Language-Dart-0553B1?logo=dart)
 [![Style: very good analysis](https://img.shields.io/badge/Style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
@@ -39,12 +39,24 @@ The Pomodoro App is a fully cross-platform productivity tool built with Flutter,
 
 <img width="600" src=".readme-assets/timer_windows.png">
 
+## Implementation and Testing
+
+| Platform | Implemented        | Manually Tested    |
+| -------- | ------------------ | ------------------ |
+| Windows  | :white_check_mark: | :white_check_mark: |
+| Android  | :white_check_mark: | :white_check_mark: |
+| Web      | :white_check_mark: | :white_check_mark: |
+| Linux    | :warning:          | :warning:          |
+| iOS      | :warning:          | :warning:          |
+| macOS    | :warning:          | :warning:          |
+
+> :warning: - This status indicates that the platform is expected to function, but due to resource constraints, other priorities are currently taking precedence. Once the code stabilizes, we will make an effort to conduct testing and implement any necessary changes.
 
 ## Contributing
 
 We welcome contributions of all kinds! Here’s how you can help:
 
-- **Code Contributions:** Check the [issues](https://github.com/fleetby/pomodoro/issues) or [projects](https://github.com/fleetby/pomodoro/projects) to see where you can contribute.
+- **Code Contributions:** Check the [issues](https://github.com/fleetby/pomotask/issues) or [projects](https://github.com/fleetby/pomotask/projects) to see where you can contribute.
 - **Report Bugs:** If you encounter any bugs or issues, please let us know by creating an issue.
 - **Feature Requests:** Have an idea for a new feature? We'd love to hear your suggestions!
 

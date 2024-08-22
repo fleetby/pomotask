@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:material_symbols_icons/symbols.dart';
-import 'package:pomodoro/presentation/app_router.gr.dart';
-import 'package:pomodoro/presentation/blocs/pomodoro/pomodoro_bloc.dart';
-import 'package:pomodoro/presentation/blocs/task_list/task_list_bloc.dart';
-import 'package:pomodoro/presentation/localizations/app_localizations.dart';
-import 'package:pomodoro/presentation/widgets/task_item.dart';
+import 'package:pomotask/presentation/app_router.gr.dart';
+import 'package:pomotask/presentation/blocs/pomodoro/pomodoro_bloc.dart';
+import 'package:pomotask/presentation/blocs/task_list/task_list_bloc.dart';
+import 'package:pomotask/presentation/localizations/app_localizations.dart';
+import 'package:pomotask/presentation/widgets/task_item.dart';
 
 class TasksBody extends StatelessWidget {
   const TasksBody({

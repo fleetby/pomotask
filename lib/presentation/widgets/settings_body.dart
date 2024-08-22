@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:material_symbols_icons/symbols.dart';
-import 'package:pomodoro/presentation/blocs/settings/settings_bloc.dart';
-import 'package:pomodoro/presentation/localizations/app_localizations.dart';
-import 'package:pomodoro/presentation/widgets/github_logo_icon.dart';
+import 'package:pomotask/presentation/blocs/settings/settings_bloc.dart';
+import 'package:pomotask/presentation/localizations/app_localizations.dart';
+import 'package:pomotask/presentation/widgets/github_logo_icon.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class SettingsBody extends StatelessWidget {
@@ -62,7 +62,7 @@ class _OpenGitHubRepository extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       margin: EdgeInsets.zero,
       child: ListTile(
-        onTap: () => launchUrlString('https://github.com/fleetby/pomodoro'),
+        onTap: () => launchUrlString('https://github.com/fleetby/pomotask'),
         leading: const GitHubLogoIcon(),
         title: Text(tr.githubAction),
         trailing: const Icon(Symbols.chevron_right_rounded),

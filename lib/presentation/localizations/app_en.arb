@@ -1,6 +1,6 @@
 {
     "@@locale": "en",
-    "appName": "Pomodoro",
+    "appName": "PomoTask",
     "titleFieldHint": "Title",
     "descriptionFieldHint": "Description",
     "taskPriorityCardLabel": "Task priority",

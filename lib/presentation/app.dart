@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pomodoro/get.dart';
-import 'package:pomodoro/presentation/app_router.dart';
-import 'package:pomodoro/presentation/blocs/pomodoro/pomodoro_bloc.dart';
-import 'package:pomodoro/presentation/blocs/settings/settings_bloc.dart';
-import 'package:pomodoro/presentation/blocs/timer/timer_bloc.dart';
-import 'package:pomodoro/presentation/localizations/app_localizations.dart';
+import 'package:pomotask/get.dart';
+import 'package:pomotask/presentation/app_router.dart';
+import 'package:pomotask/presentation/blocs/pomodoro/pomodoro_bloc.dart';
+import 'package:pomotask/presentation/blocs/settings/settings_bloc.dart';
+import 'package:pomotask/presentation/blocs/timer/timer_bloc.dart';
+import 'package:pomotask/presentation/localizations/app_localizations.dart';
 
-import 'package:pomodoro/presentation/styles/themes.dart';
+import 'package:pomotask/presentation/styles/themes.dart';
 
 class App extends StatelessWidget {
   const App(this._appRouter, {super.key});

@@ -1,10 +1,10 @@
 import 'package:drift/drift.dart';
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/data/app_db.dart';
-import 'package:pomodoro/data/mappers/tasks_table_data_mapper.dart';
-import 'package:pomodoro/domain/constants/task_priority.dart';
-import 'package:pomodoro/domain/models/task_model.dart';
-import 'package:pomodoro/domain/repositories/tasks_repository.dart';
+import 'package:pomotask/data/app_db.dart';
+import 'package:pomotask/data/mappers/tasks_table_data_mapper.dart';
+import 'package:pomotask/domain/constants/task_priority.dart';
+import 'package:pomotask/domain/models/task_model.dart';
+import 'package:pomotask/domain/repositories/tasks_repository.dart';
 
 @Singleton(as: TasksRepository)
 class TasksRepositoryImpl implements TasksRepository {

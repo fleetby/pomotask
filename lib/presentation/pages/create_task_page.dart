@@ -1,10 +1,10 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pomodoro/get.dart';
-import 'package:pomodoro/presentation/blocs/create_task/create_task_bloc.dart';
+import 'package:pomotask/get.dart';
+import 'package:pomotask/presentation/blocs/create_task/create_task_bloc.dart';
 
-import 'package:pomodoro/presentation/widgets/create_task_body.dart';
+import 'package:pomotask/presentation/widgets/create_task_body.dart';
 
 @RoutePage()
 class CreateTaskPage extends StatelessWidget {

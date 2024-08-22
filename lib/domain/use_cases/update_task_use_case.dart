@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/constants/task_priority.dart';
-import 'package:pomodoro/domain/repositories/tasks_repository.dart';
+import 'package:pomotask/domain/constants/task_priority.dart';
+import 'package:pomotask/domain/repositories/tasks_repository.dart';
 
 @singleton
 class UpdateTaskUseCase {

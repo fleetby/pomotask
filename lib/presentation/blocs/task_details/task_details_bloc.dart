@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/domain/models/task_model.dart';
-import 'package:pomodoro/domain/use_cases/delete_task_use_case.dart';
-import 'package:pomodoro/domain/use_cases/get_task_stream_use_case.dart';
-import 'package:pomodoro/domain/use_cases/update_task_use_case.dart';
+import 'package:pomotask/domain/models/task_model.dart';
+import 'package:pomotask/domain/use_cases/delete_task_use_case.dart';
+import 'package:pomotask/domain/use_cases/get_task_stream_use_case.dart';
+import 'package:pomotask/domain/use_cases/update_task_use_case.dart';
 
 part 'task_details_event.dart';
 part 'task_details_state.dart';

@@ -5,16 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:material_symbols_icons/symbols.dart';
-import 'package:pomodoro/domain/constants/pomodoro_timer_type.dart';
-import 'package:pomodoro/presentation/app_router.gr.dart';
-import 'package:pomodoro/presentation/blocs/pomodoro/pomodoro_bloc.dart';
-import 'package:pomodoro/presentation/blocs/settings/settings_bloc.dart';
-import 'package:pomodoro/presentation/blocs/timer/timer_bloc.dart';
-import 'package:pomodoro/presentation/constants/task_item_action.dart';
-import 'package:pomodoro/presentation/localizations/app_localizations.dart';
-import 'package:pomodoro/presentation/view_models/task_view_model.dart';
-import 'package:pomodoro/presentation/widgets/circular_timer.dart';
-import 'package:pomodoro/presentation/widgets/task_item.dart';
+import 'package:pomotask/domain/constants/pomodoro_timer_type.dart';
+import 'package:pomotask/presentation/app_router.gr.dart';
+import 'package:pomotask/presentation/blocs/pomodoro/pomodoro_bloc.dart';
+import 'package:pomotask/presentation/blocs/settings/settings_bloc.dart';
+import 'package:pomotask/presentation/blocs/timer/timer_bloc.dart';
+import 'package:pomotask/presentation/constants/task_item_action.dart';
+import 'package:pomotask/presentation/localizations/app_localizations.dart';
+import 'package:pomotask/presentation/view_models/task_view_model.dart';
+import 'package:pomotask/presentation/widgets/circular_timer.dart';
+import 'package:pomotask/presentation/widgets/task_item.dart';
 
 class HomeBody extends StatefulWidget {
   const HomeBody({super.key});

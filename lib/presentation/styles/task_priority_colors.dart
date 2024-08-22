@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pomodoro/domain/constants/task_priority.dart';
+import 'package:pomotask/domain/constants/task_priority.dart';
 
 extension TaskPriorityColors on TaskPriority {
   Color get borderColor => switch (this) {

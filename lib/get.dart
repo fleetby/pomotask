@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
-import 'package:pomodoro/get.config.dart';
+import 'package:pomotask/get.config.dart';
 
 final get = GetIt.instance;
 
